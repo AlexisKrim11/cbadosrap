@@ -50,6 +50,10 @@ header{
     height: auto;
 }
 
+.logo-burguer{
+    display: none;
+}
+
 .centrar-titulo{
     display: flex;
     flex-direction: column;
@@ -61,22 +65,28 @@ header{
     padding: 0px 15px 0px 0px;
 }
 /*menu*/
-nav{
+.navbar{
     background-color: rgb(255,118,18);
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 10px;
 }
 
-nav ul li, a{
+
+.nav-link{
     color: #ffffff; 
     font-weight: bold;
     display: inline;
     text-decoration: none;
     list-style-type: none;
     padding: 5px;
-    
+}
+
+.nav-link:hover{
+    border: 1px solid white;
+    background-color: rgb(36,47,65);
+    color: white;
+
 }
 
 
@@ -89,6 +99,10 @@ nav ul li, a{
 .redes-sociales{
     text-decoration: none;
     list-style-type: none;
+    }
+
+ul li, a{
+    color: white;
 }
 
 .buscador{
@@ -105,15 +119,16 @@ nav ul li, a{
     color: white;
     font-weight: bold;
     border: 2px solid black;
-    margin: 0px 6px 0px 6px;
+    margin: 0px 20px 10px 20px;
 }
 
 .rounded{
     border: 2px solid black;
 }
 .btn:hover{
-    background-color: orange;
-    border: 2px solid white;   
+    background-color: rgb(255,118,18);
+    border: 2px solid white;  
+    color: white; 
 }
 
 
@@ -156,19 +171,21 @@ nav ul li, a{
     grid-area: columna-derecha;
     padding: 5px;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .seccion-lateral{
-    padding: 0px 20px 0px 20px;
+    margin: 5px 10px 5px 10px;
     
 }
 .lista-ordenada{
     font-weight: bold;
-    margin-bottom: 15px;
+    margin: 5px 10px 5px 10px;
 }
 
+
 .encuesta-lateral{
-    margin: 15px;
+    margin: 5px 10px 5px 10px;
 }
 
 .negrita{
@@ -186,6 +203,19 @@ nav ul li, a{
     margin: 5px 10px 5px 10px;
 }
 
+.margin-column{
+    margin: 15px;
+    text-align: center;
+}
+
+.publi-img{
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    
+    
+
+}
 /*noticias*/
 section{
     padding: 10px;
@@ -253,6 +283,7 @@ section{
 .youtube-1{
     text-align: center;
     margin-bottom: 15px;
+    max-width: 855px;
 }
 
 .youtube{
@@ -269,7 +300,9 @@ section{
 
 .video-youtube-1{
     width: 855px;
-    height: 450px;    
+    height: 450px; 
+    padding: 10px;
+    margin: 10px;
 }
 .video-youtube{
     width: 415px;
@@ -309,7 +342,7 @@ section{
 .img-sponsor:hover{
     width: 170px;
     height: auto;
-    border: 5px solid orange;
+    border: 5px solid rgb(255,118,18);
 }
 
 
@@ -367,11 +400,14 @@ div ul li{
 .footer-col-2{
     margin: 10px;
     text-align: center;
-    font-family: 'Poppins 100', sans-serif
+    font-family: 'Poppins 100', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
 }
 
 .footer-orange:hover{
-    color: orange;
+    color: rgb(255,118,18);
     
 }
 /*GRID*/
@@ -387,7 +423,6 @@ div ul li{
     "seccion-footer seccion-footer seccion-footer"
     ;
     grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 170px;
     
 }
 
@@ -425,7 +460,6 @@ div ul li{
     "grid-musibat grid-musibat columna-derecha"
     "grid-musibat grid-musibat columna-derecha"
     "grid-musibat grid-musibat columna-derecha"
-    "grid-musibat grid-musibat columna-derecha"
     "sponsor-grid sponsor-grid columna-derecha"
     "seccion-footer seccion-footer seccion-footer"
     ;
@@ -434,13 +468,7 @@ div ul li{
 }
 
 /*HTMLSOBRENOSOTROS*/
-.foto-sobre-nos{
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
+
 
 .grid-sobre-nos{
     grid-area: grid-sobre-nos;
@@ -453,10 +481,29 @@ div ul li{
     "grid-sobre-nos grid-sobre-nos columna-derecha"
     "grid-sobre-nos grid-sobre-nos columna-derecha"
     "grid-sobre-nos grid-sobre-nos columna-derecha"
-    "grid-sobre-nos grid-sobre-nos columna-derecha"
     "sponsor-grid sponsor-grid columna-derecha"
     "seccion-footer seccion-footer seccion-footer";
     grid-template-columns: 2fr 2fr 1fr;
+}
+
+.sobre-nos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-sobre-nos{
+    width: 700px;
+    padding: 5px;
+    border-radius: 75px 75px 75px 75px;
+   
+}
+
+.margin-sobre-nos{
+    margin: 10px;
+    grid-area: margin-sobre-nos;
 }
 
 
@@ -474,8 +521,7 @@ form input{
     display: grid;
     grid-template-areas: 
     "header header header"
-    "grid-trabaja-con-nos grid-trabaja-con-nos columna-derecha"
-    "grid-trabaja-con-nos grid-trabaja-con-nos columna-derecha"
+    "margin-sobre-nos margin-sobre-nos columna-derecha"
     "grid-trabaja-con-nos grid-trabaja-con-nos columna-derecha"
     "grid-trabaja-con-nos grid-trabaja-con-nos columna-derecha"
     "sponsor-grid sponsor-grid columna-derecha"
@@ -483,7 +529,36 @@ form input{
     grid-template-columns: 2fr 2fr 1fr;
 }
 
+.conteiner-trabaja-con-nos{
+    padding: 15px;
+    margin: 10px;
+    background-image: url(./assets/E_PzOa3XIAEZQH_.jpg_large);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+input{
+    margin: 10px;
+}
+
+.form-label{
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+.col-md-6{
+    width: 40%;
+    margin: 15px;
+}
+
+/*article*/
+.foto-sobre-nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (min-width: 480px) and (max-width: 768px) {
     .grid-container{
@@ -515,10 +590,38 @@ form input{
         display: none;
       }
 
+      .navbar-toggler{
+       color: white;
+       display: flex;
+       border: 2px solid black;
+      }
+ 
+      .nav-item{
+        margin: 5px;
+      }
+
+    .cbados{
+    text-align:center;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 0 #111;
+    margin: 0px;
+    }
+
+
+    
+    .letra-carrusel{
+        font-size: 1.5em;;
+    }
+
+
       .video-youtube-1{
         width: 415px;
         height: 230px; 
       }
+
+
      .youtube-row{
         display: flex;
         flex-wrap: wrap;
@@ -539,9 +642,76 @@ form input{
     .encuesta-lateral{
         display: none;
     }
-    . comunidad{
+    .comunidad{
         display: none;
     }
         
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-  
+
+   .musibat{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+   }
+
+   .img-musibat{
+        width: 90%;
+        height: auto;
+
+   }
+
+    .grid-container-musibat{
+        grid-template-areas: 
+        "header header"
+        "grid-musibat grid-musibat"
+        "grid-musibat grid-musibat"
+        "sponsor-grid sponsor-grid"
+        "columna-derecha columna-derecha"
+        "seccion-footer seccion-footer ";
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+
+    .grid-container-sobre-nos{
+        grid-template-areas: 
+        "header header"
+        "grid-sobre-nos grid-sobre-nos"
+        "grid-sobre-nos grid-sobre-nos"
+        "sponsor-grid sponsor-grid"
+        "columna-derecha columna-derecha"
+        "seccion-footer seccion-footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foto-sobre-nos{
+        width: 90%;
+        height: auto;
+    }
+
+    .grid-container-trabaja-con-nos{
+        grid-template-areas: 
+        "header header"
+        "margin-sobre-nos margin-sobre-nos"
+        "grid-trabaja-con-nos grid-trabaja-con-nos"
+        "sponsor-grid sponsor-grid"
+        "columna-derecha columna-derecha"
+        "seccion-footer seccion-footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .publicidad{
+        display: none;
+    }
+    
+}

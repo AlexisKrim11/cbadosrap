@@ -36,143 +36,190 @@
             <!-- Agrega más redes sociales según sea necesario -->
           </ul>
       </div>
-    <!-- Barra de NAVEGACIÒN -->
-      <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./batallas.html">Batallas</a></li>
-            <li><a href="./musica.html">Musica</a></li>
-            <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
-        </ul>
-          <div class="buscador">
-            <input type="text" id="searchInput" class="rounded" placeholder="Buscar...">
-            <button type="button" class="btn">CBADOS</button>
-          </div>
-      </nav>
+    <!-- Barra de NAVEGACIÒN Burguer -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="menu-hamburguesa">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./batallas.html" class="nav-link">Batallas</a>
+            </li>
+            <li class="nav-item">
+              <a  href="./musica.html" class="nav-link">Música</a>
+            </li>
+            <li class="nav-item">
+              <a  href="./sobre-nosotros.html"class="nav-link">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Trabaja con nosotros</a>
+            </li>
+          </ul>
+        </div>
+        <div class="buscador">
+              <input type="text" id="searchInput" class="rounded" placeholder="Buscar...">
+              <button type="button" class="btn">CBADOS</button>
+        </div>
+      </div>
+  </nav>
+</header>
     </header>
+
+    <div class="margin-sobre-nos">
+      <h2 class="secciones">¿Qué buscamos de vos?</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, sequi pariatur modi nemo expedita quaerat iste vitae hic accusamus commodi distinctio molestiae laborum iusto explicabo eveniet quis similique quisquam?</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, sequi pariatur modi nemo expedita quaerat iste vitae hic accusamus commodi distinctio molestiae laborum iusto explicabo eveniet quis similique quisquam?</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, sequi pariatur modi nemo expedita quaerat iste vitae hic accusamus commodi distinctio molestiae laborum iusto explicabo eveniet quis similique quisquam?</p>
+      <img class="foto-sobre-nos"  src="../assets/compe.jpg" alt="foto-cbados">
+    </div>
 
     <section class="grid-trabaja-con-nos">
         <form>
             <h2 class="secciones">TRABAJA CON NOSOTROS</h2>
-            <input type="text" placeholder="Ingrese su nombre completo">
-            <input type="text" placeholder="Ingrese sus apellidos"><br>
-            <input type="date" placeholder="Ingrese su fecha de nacimiento">
-            <input type="text" placeholder="Estado civil"><br>
-            <input type="number" placeholder="Cantidad de hijos">
-            <select name="provincia">
-                <option value="N/A" selected>N/A</option>
-                <option value="Caba">Capital Federal</option>
-                <option value="Buenos Aires">Bs. As.</option>
-                <option value="Catamarca">Catamarca</option>
-                <option value="Chaco">Chaco</option>
-                <option value="Chubut">Chubut</option>
-                <option value="Cordoba">Cordoba</option>
-                <option value="Corrientes">Corrientes</option>
-                <option value="Entre Rios">Entre Rios</option>
-                <option value="Formosa">Formosa</option>
-                <option value="Jujuy">Jujuy</option>
-                <option value="La Pampa">La Pampa</option>
-                <option value="La Rioja">La Rioja</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Misiones">Misiones</option>
-                <option value="Neuquen">Neuquen</option>
-                <option value="Rio Negro">Rio Negro</option>
-                <option value="Salta">Salta</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Santa Cruz">Santa Cruz</option>
-                <option value="Santa Fe">Santa Fe</option>
-                <option value="Sgo. del Estero">Sgo. del Estero</option>
-                <option value="Tierra del Fuego">Tierra del Fuego</option>
-                <option value="Tucuman">Tucuman</option>
-            </select> <br>
-            <input type="email" placeholder="Ingrese su mail">
-            <input type="tel" placeholder="Ingrese su número de contacto">
-            <textarea cols="75" rows="5" placeholder="Contame sobre vos"></textarea><br>
+            <div class="conteiner-trabaja-con-nos">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Nombres</label>
+                  <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Telefono</label>
+                  <input type="number" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Hijos</label>
+                  <input type="number" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Provincia</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Cordoba...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+    
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label " for="invalidCheck">
+                Quiero trabajar en CBADOS Rap
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
             
-            <input type="reset" value="Borrar campos" class="botones">
-            <input type="submit" value="¡Estoy listo!" class="botones">
+            <input type="reset" value="Borrar campos" class="btn">
+            <input type="submit" value="¡Estoy listo!" class="btn">
         </form> 
     </section>
+
+    
   
      <!--Columna lateral, llenar más fijo en todos los html-->
-    <main class="columna-derecha">
-        <div class="seccion-lateral">
-            <h5 class="secciones">Lo más leido</h5>
-                <ol>
-                    <li class="lista-ordenada">La importancia de Mecha para la Red Bull en Córdoba.</li>
-                    <li class="lista-ordenada">La música de septiembre en Argentina.</li>
-                    <li class="lista-ordenada">Larrix es el líder de FMS.</li>
-                    <li class="lista-ordenada">Recuerdo: Los nombres de la segunda temporada de FMS Argentina.</li>
-                    <li class="lista-ordenada">Wos: Biografía de un campeón.</li>
-                </ol>
-        </div>
+     <main class="columna-derecha">
+      <div class="seccion-lateral">
+          <h5 class="secciones">Lo más leido</h5>
+              <ol>
+                  <li class="lista-ordenada">La importancia de Mecha para la Red Bull en Córdoba.</li>
+                  <li class="lista-ordenada">La música de septiembre en Argentina.</li>
+                  <li class="lista-ordenada">Larrix es el líder de FMS.</li>
+                  <li class="lista-ordenada">Recuerdo: Los nombres de la segunda temporada de FMS Argentina.</li>
+                  <li class="lista-ordenada">Wos: Biografía de un campeón.</li>
+              </ol>
+      </div>
 
-        <!--encuesta bootstrap-->
+      <!--encuesta bootstrap-->
 
-        <div class="encuesta-lateral">
-            <h5 class="secciones">Encuesta de la semana:</h5>
-            <h6>¿Quién será el campeón de Red Bull Argentina 🇦🇷?</h6>
+      <div class="encuesta-lateral">
+          <h5 class="secciones">Encuesta de la semana:</h5>
+          <h6>¿Quién será el campeón de Red Bull Argentina 🇦🇷?</h6>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Larrix
+              </label>
+            </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Larrix
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Barto
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  G5
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Exe Bahía
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Otro
-                </label>
-              </div>
-              <input type="submit" value="Enviar opinión" class="botones">
-            </form>
-        </div>
-        <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Barto
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                G5
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Exe Bahía
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Otro
+              </label>
+            </div>
+            <input type="submit" value="Enviar opinión" class="botones">
+          </form>
+      </div>
+      <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
 
-        <div class="comunidad"> 
-          <h5 class="secciones">La gente anda diciendo:</h5>
-            <h6>"Cbados es una competencia para ir a disfutar con la familia"</h6>
-            <p class="negrita">IvanCba</p>
+      <div class="comunidad"> 
+        <h5 class="secciones">La gente comenta:</h5>
+          <h6 class="margin-column">"Cbados es una competencia para ir a disfutar con la familia"</h6>
+          <p class="negrita">IvanCba</p>
 
-            <h6>"Gran canal de Youtube, las mejores entrevistas"</h6>
-            <p class="negrita">Ceci</p>
+          <h6 class="margin-column"> "Gran canal de Youtube, las mejores entrevistas"</h6>
+          <p class="negrita">Ceci</p>
 
-            <h6>"Me gustò la entrevista con Mecha, traigan a Santoz"</h6>
-            <p class="negrita">LuquitasCMJ</p>
+          <h6 class="margin-column">"Me gustò la entrevista con Mecha, traigan a Santoz"</h6>
+          <p class="negrita">LuquitasCMJ</p>
 
-            <h6>"Cambien el día de la competencia se me complica ir por trabajo"</h6>
-            <p class="negrita">King</p>
-        </div>    
+          <h6 class="margin-column">"Cambien el día de la competencia se me complica ir por trabajo"</h6>
+          <p class="negrita">King</p>
+      </div>    
 
-        <div class="tu-comentario"> 
-          <h5 class="secciones">Tu comentario nos ayuda a crecer</h5>
-           <input class="opinion-column" type="text" placeholder="Nombre o apodo"><br>
-           <textarea class="opinion-column" cols="30" rows="5" placeholder="Te leemos..."></textarea><br>
-           <input type="submit" value="Enviar opinión" class="botones">
-        </div>  
+      <div class="tu-comentario"> 
+        <h5 class="secciones">Tu comentario:</h5>
+         <input class="opinion-column" type="text" placeholder="Nombre o apodo"><br>
+         <textarea class="opinion-column" cols="30" rows="5" placeholder="Te leemos..."></textarea><br>
+         <input type="submit" value="Enviar opinión" class="btn">
+      </div>  
+      <div class="seguimiento">
+          <h5 class="secciones">Proximos Eventos</h5>
+            <h6 class="margin-column">Red Bull Argentina, Córdoba Capital 29/10/2023</h6>
+            <p class="negrita">Adquirí tus entradas</p>
 
-        
-    </main>
+            <h6 class="margin-column">FMS Argentina, Entre Ríos 15/11/2023</h6>
+            <p class="negrita">Adquirí tus entradas</p>
+
+            <h6 class="margin-column">CBADOS RAP en Córdoba Capital 22/11/2023</h6>
+            <p class="negrita">Adquirí tus entradas</p>
+
+            <h6 class="margin-column">FMS Colombia en Cartagena 27/11/2023</h6>
+            <p class="negrita">Adquirí tus entradas</p>
+      </div>
+</main>
 
     <section class="sponsor-grid">
       <h2 class="secciones">Son parte de la familia</h2>
@@ -196,7 +243,7 @@
             <a href="https://www.youtube.com/@CBADOSRAP" target="_blank">  <img class="img-sponsor" src="../assets/cbados.jpg" alt="sponsor"></a>
           </div>
       </div>
-    </section>
+  </section>
     
 
     <!--Footer-->

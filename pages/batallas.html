@@ -37,19 +37,38 @@
             </ul>
         </div>
       <!-- Barra de NAVEGACIÒN -->
-        <nav class="menu">
-          <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./batallas.html">Batallas</a></li>
-              <li><a href="./musica.html">Musica</a></li>
-              <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-              <li><a href="./trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
-          </ul>
-            <div class="buscador">
-              <input type="text" id="searchInput" class="rounded" placeholder="Buscar...">
-              <button type="button" class="btn">CBADOS</button>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="menu-hamburguesa">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Batallas</a>
+              </li>
+              <li class="nav-item">
+                <a  href="./musica.html" class="nav-link">Música</a>
+              </li>
+              <li class="nav-item">
+                <a  href="./sobre-nosotros.html"class="nav-link">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="trabaja-con-nosotros.html" class="nav-link">Trabaja con nosotros</a>
+              </li>
+            </ul>
+          </div>
+          <div class="buscador">
+                <input type="text" id="searchInput" class="rounded" placeholder="Buscar...">
+                <button type="button" class="btn">CBADOS</button>
+          </div>
+        </div>
+      </nav>
     </header>
 
 
@@ -100,103 +119,117 @@
     </section>
 
   <!--Columna lateral, llenar más fijo en todos los html-->
-    <main class="columna-derecha">
-        <!--Lo màs leido-->
-        <div class="seccion-lateral">
-            <h5 class="secciones">Lo más leido</h5>
-                <ol>
-                    <li class="lista-ordenada">La importancia de Mecha para la Red Bull en Córdoba.</li>
-                    <li class="lista-ordenada">La música de septiembre en Argentina.</li>
-                    <li class="lista-ordenada">Larrix es el líder de FMS.</li>
-                    <li class="lista-ordenada">Recuerdo: Los nombres de la segunda temporada de FMS Argentina.</li>
-                    <li class="lista-ordenada">Wos: Biografía de un campeón.</li>
-                </ol>
-        </div>
+  <main class="columna-derecha">
+    <div class="seccion-lateral">
+        <h5 class="secciones">Lo más leido</h5>
+            <ol>
+                <li class="lista-ordenada">La importancia de Mecha para la Red Bull en Córdoba.</li>
+                <li class="lista-ordenada">La música de septiembre en Argentina.</li>
+                <li class="lista-ordenada">Larrix es el líder de FMS.</li>
+                <li class="lista-ordenada">Recuerdo: Los nombres de la segunda temporada de FMS Argentina.</li>
+                <li class="lista-ordenada">Wos: Biografía de un campeón.</li>
+            </ol>
+    </div>
 
-        <!--encuesta bootstrap-->
-        <div class="encuesta-lateral">
-            <h5 class="secciones">Encuesta de la semana:</h5>
-            <h6>¿Quién será el campeón de Red Bull Argentina 🇦🇷?</h6>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                Larrix
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                Barto
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                G5
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                Exe Bahía
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                Otro
-                </label>
-            </div>
-            <input type="submit" value="Enviar opinión" class="botones">
-            </form>
-        </div>
-        <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
-            <!--comentarios-->
-        <div class="comunidad"> 
-        <h5 class="secciones">La gente anda diciendo:</h5>
-            <h6>"Cbados es una competencia para ir a disfutar con la familia"</h6>
-            <p class="negrita">IvanCba</p>
+    <!--encuesta bootstrap-->
 
-            <h6>"Gran canal de Youtube, las mejores entrevistas"</h6>
-            <p class="negrita">Ceci</p>
+    <div class="encuesta-lateral">
+        <h5 class="secciones">Encuesta de la semana:</h5>
+        <h6>¿Quién será el campeón de Red Bull Argentina 🇦🇷?</h6>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Larrix
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Barto
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              G5
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Exe Bahía
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Otro
+            </label>
+          </div>
+          <input type="submit" value="Enviar opinión" class="botones">
+        </form>
+    </div>
+    <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
 
-            <h6>"Me gustò la entrevista con Mecha, traigan a Santoz"</h6>
-            <p class="negrita">LuquitasCMJ</p>
+    <div class="comunidad"> 
+      <h5 class="secciones">La gente comenta:</h5>
+        <h6 class="margin-column">"Cbados es una competencia para ir a disfutar con la familia"</h6>
+        <p class="negrita">IvanCba</p>
 
-            <h6>"Cambien el día de la competencia se me complica ir por trabajo"</h6>
-            <p class="negrita">King</p>
-        </div>    
-        <!--opinion-->
-        <div class="tu-comentario"> 
-            <h5 class="secciones">Tu comentario nos ayuda a crecer</h5>
-            <input class="opinion-column" type="text" placeholder="Nombre o apodo"><br>
-            <textarea class="opinion-column" cols="30" rows="5" placeholder="Te leemos..."></textarea><br>
-            <input type="submit" value="Enviar opinión" class="botones">
-        </div>  
-    </main>
+        <h6 class="margin-column"> "Gran canal de Youtube, las mejores entrevistas"</h6>
+        <p class="negrita">Ceci</p>
+
+        <h6 class="margin-column">"Me gustò la entrevista con Mecha, traigan a Santoz"</h6>
+        <p class="negrita">LuquitasCMJ</p>
+
+        <h6 class="margin-column">"Cambien el día de la competencia se me complica ir por trabajo"</h6>
+        <p class="negrita">King</p>
+    </div>    
+
+    <div class="tu-comentario"> 
+      <h5 class="secciones">Tu comentario:</h5>
+       <input class="opinion-column" type="text" placeholder="Nombre o apodo"><br>
+       <textarea class="opinion-column" cols="30" rows="5" placeholder="Te leemos..."></textarea><br>
+       <input type="submit" value="Enviar opinión" class="btn">
+    </div>  
+    <div class="seguimiento">
+        <h5 class="secciones">Proximos Eventos</h5>
+          <h6 class="margin-column">Red Bull Argentina, Córdoba Capital 29/10/2023</h6>
+          <p class="negrita">Adquirí tus entradas</p>
+
+          <h6 class="margin-column">FMS Argentina, Entre Ríos 15/11/2023</h6>
+          <p class="negrita">Adquirí tus entradas</p>
+
+          <h6 class="margin-column">CBADOS RAP en Córdoba Capital 22/11/2023</h6>
+          <p class="negrita">Adquirí tus entradas</p>
+
+          <h6 class="margin-column">FMS Colombia en Cartagena 27/11/2023</h6>
+          <p class="negrita">Adquirí tus entradas</p>
+    </div>
+</main>
 
     <section class="sponsor-grid">
-    <h2 class="secciones">Son parte de la familia</h2>
-    <div class="sponsor-row">
-        <div class="sponsor">
-            <a href="https://www.youtube.com/@eltrianguloestudio" target="_blank"><img class="img-sponsor" src="../assets/logo- triangulo.jpg" alt="sponsor"></a>
+        <h2 class="secciones">Son parte de la familia</h2>
+        <div class="sponsor-row">
+            <div class="sponsor">
+                <a href="https://www.youtube.com/@eltrianguloestudio" target="_blank"><img class="img-sponsor" src="../assets/logo- triangulo.jpg" alt="sponsor"></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.youtube.com/UrbanRoosters" target="_blank">  <img class="img-sponsor" src="../assets/logo-fms.jpg" alt="sponsor"></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.youtube.com/@RedBullBatalla" target="_blank">  <img class="img-sponsor" src="../assets/logo-red-bull-batalla.png" alt="sponsor"></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.youtube.com/c/Sinescrituracba" target="_blank">  <img class="img-sponsor" src="../assets/logo-sines.jpg" alt="sponsor"></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.youtube.com/user/elquintoescalon" target="_blank">  <img class="img-sponsor" src="../assets/LOGO_5to.jpg" alt="sponsor"></a>
+            </div>
+            <div class="sponsor">
+              <a href="https://www.youtube.com/@CBADOSRAP" target="_blank">  <img class="img-sponsor" src="../assets/cbados.jpg" alt="sponsor"></a>
+            </div>
         </div>
-        <div class="sponsor">
-          <a href="https://www.youtube.com/UrbanRoosters" target="_blank">  <img class="img-sponsor" src="../assets/logo-fms.jpg" alt="sponsor"></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://www.youtube.com/@RedBullBatalla" target="_blank">  <img class="img-sponsor" src="../assets/logo-red-bull-batalla.png" alt="sponsor"></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://www.youtube.com/c/Sinescrituracba" target="_blank">  <img class="img-sponsor" src="../assets/logo-sines.jpg" alt="sponsor"></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://www.youtube.com/user/elquintoescalon" target="_blank">  <img class="img-sponsor" src="../assets/LOGO_5to.jpg" alt="sponsor"></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://www.youtube.com/@CBADOSRAP" target="_blank">  <img class="img-sponsor" src="../assets/cbados.jpg" alt="sponsor"></a>
-        </div>
-    </div>
     </section>
 
     

@@ -37,23 +37,38 @@
           </ul>
       </div>
     <!-- Barra de NAVEGACIÒN -->
-      <div class="menu-fijo">  
-        <nav class="menu">
-          <ul>
-            <div class="mobile-none">
-              <li><a href="#">Home</a></li>
-              <li><a href="./pages/batallas.html">Batallas</a></li>
-              <li><a href="./pages/musica.html">Musica</a></li>
-              <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-              <li><a href="./pages/trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
-            </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="menu-hamburguesa">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/batallas.html" class="nav-link">Batallas</a>
+            </li>
+            <li class="nav-item">
+              <a  href="./pages/musica.html" class="nav-link">Música</a>
+            </li>
+            <li class="nav-item">
+              <a  href="./pages/sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/trabaja-con-nosotros.html" class="nav-link">Trabaja con nosotros</a>
+            </li>
           </ul>
-            <div class="buscador">
+        </div>
+        <div class="buscador">
               <input type="text" id="searchInput" class="rounded" placeholder="Buscar...">
               <button type="button" class="btn">CBADOS</button>
-            </div>
-        </nav>
+        </div>
       </div>
+    </nav>
   </header>
 
 <!--Acá tiene que ir un carrusel de fotos que pase autmomáticamente agregarle más h2 e img-->
@@ -69,25 +84,25 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/larrix.jpg" class="d-block w-100" alt="larrix">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h5 class="letra-carrusel">Larrix campeón en Sinescritura</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./assets/mecha.jpg" class="d-block w-100" alt="Mecha">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h5 class="letra-carrusel">Mecha y la importancia de la Red Bull en Córdoba</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./assets/graffitii.jpg" class="d-block w-100" alt="grafitti">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h5 class="letra-carrusel">El arte no entendida por la ley</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./assets/aczino-wos.jpg" class="d-block w-100" alt="grafitti">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h5 class="letra-carrusel">Wos: Biografía de un campeón</h5>
             </div>
           </div>
@@ -151,34 +166,55 @@
                   Otro
                 </label>
               </div>
-              <input type="submit" value="Enviar opinión" class="botones">
+              <input type="submit" value="Enviar opinión" class="btn">
             </form>
         </div>
         <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
 
         <div class="comunidad"> 
-          <h5 class="secciones">La gente anda diciendo:</h5>
-            <h6>"Cbados es una competencia para ir a disfutar con la familia"</h6>
+          <h5 class="secciones">La gente comenta:</h5>
+            <h6 class="margin-column">"Cbados es una competencia para ir a disfutar con la familia"</h6>
             <p class="negrita">IvanCba</p>
 
-            <h6>"Gran canal de Youtube, las mejores entrevistas"</h6>
+            <h6 class="margin-column"> "Gran canal de Youtube, las mejores entrevistas"</h6>
             <p class="negrita">Ceci</p>
 
-            <h6>"Me gustò la entrevista con Mecha, traigan a Santoz"</h6>
+            <h6 class="margin-column">"Me gustò la entrevista con Mecha, traigan a Santoz"</h6>
             <p class="negrita">LuquitasCMJ</p>
 
-            <h6>"Cambien el día de la competencia se me complica ir por trabajo"</h6>
+            <h6 class="margin-column">"Cambien el día de la competencia se me complica ir por trabajo"</h6>
             <p class="negrita">King</p>
         </div>    
 
         <div class="tu-comentario"> 
-          <h5 class="secciones">Tu comentario nos ayuda a crecer</h5>
+          <h5 class="secciones">Tu comentario:</h5>
            <input class="opinion-column" type="text" placeholder="Nombre o apodo"><br>
            <textarea class="opinion-column" cols="30" rows="5" placeholder="Te leemos..."></textarea><br>
-           <input type="submit" value="Enviar opinión" class="botones">
+           <input type="submit" value="Enviar opinión" class="btn">
         </div>  
         <div class="seguimiento">
-          <h5 class="secciones">Nuestras redes sociales</h5>
+            <h5 class="secciones">Proximos Eventos</h5>
+              <h6 class="margin-column">Red Bull Argentina, Córdoba Capital 29/10/2023</h6>
+              <p class="negrita">Adquirí tus entradas</p>
+  
+              <h6 class="margin-column">FMS Argentina, Entre Ríos 15/11/2023</h6>
+              <p class="negrita">Adquirí tus entradas</p>
+  
+              <h6 class="margin-column">CBADOS RAP en Córdoba Capital 22/11/2023</h6>
+              <p class="negrita">Adquirí tus entradas</p>
+  
+              <h6 class="margin-column">FMS Colombia en Cartagena 27/11/2023</h6>
+              <p class="negrita"><a href="https://www.ticketek.com.ar/los-totora-autoshow/mandarine-park?gclid=Cj0KCQjwpompBhDZARIsAFD_Fp_MdkGmtjZwadesAqxpVB27Xf-bPisZPKvj52Zf0FLXdmb2vw4_RTIaAlMzEALw_wcB"></a>Adquirí tus entradas</p>
+        </div>
+
+        <div class="publicidad">
+          <h5 class="secciones">Recomendamos</h5>
+          <img src="./assets/cocacola-logo-1024x696.jpeg" alt="publi" class="publi-img">
+          <img src="./assets/mc_donalds-600x300-1.png" alt="publi" class="publi-img">
+          <img src="./assets/0adfc037-5038-4a5d-b2dc-4c9325d1ce17_alta-libre-aspect-ratio_default_0.jpg" alt="publi" class="publi-img">
+          <img src="./assets/ole.jpg" alt="publi" class="publi-img">
+
+
         </div>
   </main>
     
@@ -233,7 +269,7 @@
               <p class="card-text">Tenemos un listado de las nuevas canciones del mes de septiembre, donde se destaca el nuevo disco de Acru.</p>
               <a href="#" class="btn btn-primary">Ir a la nota</a>
               </div>
-          </div>
+          </div>   
         </div>
   </section>
   
