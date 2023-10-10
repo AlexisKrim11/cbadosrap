@@ -212,10 +212,22 @@ ul li, a{
     width: 90%;
     margin: 15px;
     padding: 15px;
-    
-    
 
 }
+
+.publi-img:hover{
+    width: 94%;
+}
+
+.seguimiento a {
+    color: black;
+    text-decoration: none;
+}
+.seguimiento a:hover{
+    color: orange;
+    font-size: 16px;
+}
+
 /*noticias*/
 section{
     padding: 10px;
@@ -642,6 +654,21 @@ input{
     .encuesta-lateral{
         display: none;
     }
+
+
+    .flex-opinion-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .opinion-column{
+        max-width: 80%;
+
+    }
+
+
     .comunidad{
         display: none;
     }
@@ -792,8 +819,14 @@ input{
 
 
       .video-youtube-1{
-        width: 415px;
-        height: 230px; 
+        width: 270px;
+        height: 150px;
+        padding: 1px;
+      }
+      .video-youtube{
+        width: 270px;
+        height: 150px; 
+        padding: 1px;
       }
 
 
@@ -820,7 +853,18 @@ input{
     .comunidad{
         display: none;
     }
-        
+
+    .flex-opinion-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .opinion-column{
+        max-width: 80%;
+
+    }
 
     footer{
         display: flex;
@@ -887,6 +931,11 @@ input{
 
     .publicidad{
         display: none;
+    }
+
+    .map{
+        width: 270px;
+        height: 150px;
     }
 
 }
