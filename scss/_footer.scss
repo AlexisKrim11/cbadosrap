@@ -36,6 +36,16 @@ footer{
         .map {
             width: 300px;
             height: 140px;
+                @include medias-querys ('tablet'){ 
+                    width: auto;
+                    
+                }
+                @include medias-querys ('mobile'){ 
+                    width: 250px;
+                    height: auto;
+                }
+             
+            }
         }
 
         li{ 
@@ -54,16 +64,10 @@ footer{
         }
     }
 
-    .map{
-        @include medias-querys ('tablet'){ 
-            width: 270px;
-            height: 150px;
-        }
-     
-    }
+    
     
         
-}
+
     
     
 

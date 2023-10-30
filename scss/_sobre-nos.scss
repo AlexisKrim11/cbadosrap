@@ -11,17 +11,6 @@
         align-items: center;
     }
 
-    .foto-sobre-nos{
-
-        @include medias-querys ('tablet'){ 
-            width: 90%;
-            height: auto;
-        }
-        @include medias-querys ('mobile'){
-           width: 90%;
-            height: auto;
-        }
-    }
 
  
 }
