@@ -342,7 +342,7 @@ header .rounded {
   align-items: center;
 }
 .sponsor-row .sponsor {
-  margin: 15px;
+  margin: 10px;
 }
 @media (min-width: 480px) and (max-width: 1199px) {
   .sponsor-row .sponsor {
@@ -654,6 +654,7 @@ footer .footer-col-1 .footer-orange:hover {
 
 .grid-trabaja-con-nos {
   grid-area: grid-trabaja-con-nos;
+  margin: 5px;
 }
 .grid-trabaja-con-nos form input {
   width: 275px;
