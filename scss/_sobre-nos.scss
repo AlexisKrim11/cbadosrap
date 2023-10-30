@@ -1,0 +1,31 @@
+
+
+.grid-sobre-nos{
+    grid-area: grid-sobre-nos;
+
+    .sobre-nos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto-sobre-nos{
+
+        @include medias-querys ('tablet'){ 
+            width: 90%;
+            height: auto;
+        }
+        @include medias-querys ('mobile'){
+           width: 90%;
+            height: auto;
+        }
+    }
+
+ 
+}
+
+
+
+

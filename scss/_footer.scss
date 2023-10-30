@@ -1,0 +1,70 @@
+@import "mixin";
+@import "variables";
+
+footer{
+    background-image: url(../assets/compe.jpg);
+    color: $color-blanco;
+    font-family: 'Poppins 300', sans-serif;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-around; 
+    padding: 5px;  
+    flex: 1; 
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    align-items: center;
+    grid-area: seccion-footer;
+
+    @include medias-querys ('tablet'){ 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    @include medias-querys ('mobile'){
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+   
+    
+    
+    .footer-col-1{
+        margin: 10px;
+        text-align: center;
+        .map {
+            width: 300px;
+            height: 140px;
+        }
+
+        li{ 
+            list-style-type: none;
+        }
+        
+        .footer-orange{ 
+            color: $color-blanco;
+            text-decoration: none;
+           
+          
+            
+                &:hover {
+                color: $color-primario;
+                }
+        }
+    }
+
+    .map{
+        @include medias-querys ('tablet'){ 
+            width: 270px;
+            height: 150px;
+        }
+     
+    }
+    
+        
+}
+    
+    
+
+

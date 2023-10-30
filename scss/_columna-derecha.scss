@@ -1,0 +1,122 @@
+@import "mixin";
+.columna-derecha{
+    grid-area: columna-derecha;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+
+    .seccion-lateral{
+        margin: 5px 10px 5px 10px;
+        .lista-ordenada{
+            font-weight: bold;
+            margin: 5px 10px 5px 10px;
+        }
+        
+    }
+
+    .lista-ordenada{
+        
+        @include medias-querys ('tablet'){ 
+            text-align: center;
+        }
+        @include medias-querys ('mobile'){
+            text-align: center;
+        }
+    }
+    
+    .encuesta-lateral{
+        margin: 5px 10px 5px 10px;
+
+        @include medias-querys ('tablet'){ 
+            display: none;
+        }
+        @include medias-querys ('mobile'){
+            display: none;
+        }
+    }
+
+    .comunidad{
+        .margin-column{
+            margin: 15px;
+            text-align: center;
+        }
+            @include medias-querys ('tablet'){ 
+                display: none;
+            }
+            @include medias-querys ('mobile'){
+                display: none;
+            }
+        }
+
+        .negrita{
+            font-weight: bold;
+            text-align: center;
+        }
+    
+    
+    .tu-comentario{
+        
+        .opinion-column{
+            max-width: auto;
+            height: auto;
+            
+
+            @include medias-querys ('tablet'){ 
+                max-width: 80%;
+            }
+            @include medias-querys ('mobile'){
+                max-width: 80%;
+            }
+        }
+    }
+
+    .btn{
+        margin: 3px 75px 3px;
+    }
+    
+    
+    .publicidad{
+        .publi-img{
+            width: 90%;
+            margin: 15px;
+            padding: 15px;
+            &:hover{
+                width: 94%;
+            }
+        
+        }
+        @include medias-querys ('tablet'){ 
+            display: none;
+        }
+        @include medias-querys ('mobile'){
+            display: none;
+        }
+        
+    }
+    
+    
+    .seguimiento {
+        a { color: black;
+        text-decoration: none;
+            &:hover{
+                color: orange;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .margin-column{
+        text-align: center;
+        margin: 15px;
+    }
+    
+    .flex-opinion-column{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+   
+}
+}

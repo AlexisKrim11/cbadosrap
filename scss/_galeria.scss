@@ -1,0 +1,43 @@
+.grid-container-gal {
+
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    margin: 8px;
+    .grid-galeria{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        grid-area: grid-geleria;
+    }
+
+    .row-gal{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @include medias-querys ('mobile'){
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+    }
+
+    .titulo-top{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .top-video{
+            width: 460px;
+            height: 255px; 
+            padding: 7px;
+            margin: 8px;
+        }
+    }
+

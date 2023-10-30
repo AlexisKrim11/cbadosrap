@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--description-->
+     <meta name="description" content="Trabaja con nosotros">
+     <!--keywords-->
+     <meta name="keywords" content="Trabaja con nosotros, Empleo, Oportunidades laborales, Vacantes, Carreras, Empleados, Equipo, Puestos de trabajo, Recursos humanos, Seleccion de personal, Postulacion, Ofertas de empleo, Candidatos, Perfiles profesionales, Reclutamiento, Contratacion, Desarrollo de carrera">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css"> 
-    <title>CBADOS RAP</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <title>CBADOS RAP - Trabaja con Nosotros</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,900&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <!--Redes-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Animacion-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="grid-container-trabaja-con-nos">
@@ -22,7 +28,9 @@
   <header class="header"> 
       <div class="encabezado">
           <a href="../index.html">
-              <img src="../assets/cbados.png" alt="logoCbadoos" class="logo">
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" src="../assets/cbados.png" alt="logoCbadoos" class="logo">
           </a>
           <div class="centrar-titulo">
               <h1 class="cbados">CBADOS RAP</h1>
@@ -40,7 +48,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="menu-hamburguesa">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu navegable">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -54,6 +62,9 @@
             </li>
             <li class="nav-item">
               <a  href="./musica.html" class="nav-link">Música</a>
+            </li>
+            <li class="nav-item">
+              <a href="./top-10.html" class="nav-link">Top 10</a>
             </li>
             <li class="nav-item">
               <a  href="./sobre-nosotros.html"class="nav-link">Sobre nosotros</a>
@@ -70,15 +81,15 @@
       </div>
   </nav>
 </header>
-    </header>
 
-    <div class="margin-sobre-nos">
-      <h2 class="secciones">¿Qué buscamos de vos?</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, sequi pariatur modi nemo expedita quaerat iste vitae hic accusamus commodi distinctio molestiae laborum iusto explicabo eveniet quis similique quisquam?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, sequi pariatur modi nemo expedita quaerat iste vitae hic accusamus commodi distinctio molestiae laborum iusto explicabo eveniet quis similique quisquam?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, sequi pariatur modi nemo expedita quaerat iste vitae hic accusamus commodi distinctio molestiae laborum iusto explicabo eveniet quis similique quisquam?</p>
-      <img class="foto-sobre-nos"  src="../assets/compe.jpg" alt="foto-cbados">
-    </div>
+<div class="margin-sobre-nos">
+  <h2 class="secciones">¿Qué buscamos de vos?</h2>
+  <p>En CBADOS Rap, buscamos de vos tu pasión por la música y la cultura del rap. Valoramos la creatividad y el compromiso, y estamos en constante búsqueda de personas apasionadas que deseen unirse a nuestro equipo. Si te apasiona el rap, la producción de contenido, la redacción de noticias, la edición de videos o cualquier otra área relacionada con la música, queremos conocerte.</p>
+  <p>Nuestra empresa ofrece un entorno colaborativo y dinámico donde puedes crecer y desarrollarte profesionalmente. Si te sientes motivado para formar parte de nuestro equipo y contribuir a la difusión de la cultura del rap en Córdoba y más allá, ¡contáctanos! Juntos, podemos seguir construyendo un espacio vibrante y lleno de energía para los amantes de la música y el rap. </p>
+  <p>¡Esperamos conocerte pronto!</p>
+  <img class="foto-sobre-nos" src="../assets/compe.jpg" alt="foto-cbados">
+</div>
+    
 
     <section class="grid-trabaja-con-nos">
         <form>
@@ -112,17 +123,6 @@
                     <option>...</option>
                   </select>
                 </div>
-    
-
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label " for="invalidCheck">
-                Quiero trabajar en CBADOS Rap
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
             
             <input type="reset" value="Borrar campos" class="btn">
             <input type="submit" value="¡Estoy listo!" class="btn">
@@ -179,7 +179,7 @@
                 Otro
               </label>
             </div>
-            <input type="submit" value="Enviar opinión" class="botones">
+            <input type="submit" value="Enviar opinión" class="btn">
           </form>
       </div>
       <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
@@ -265,10 +265,11 @@
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1431.51688287207!2d-64.18939266816722!3d-31.421285354985482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28428fd485d%3A0x4f89f1c2159ad96d!2sPlaza%20Dr.%20Dalmacio%20V%C3%A9lez%20Sarsfield!5e0!3m2!1ses-419!2sar!4v1694315375589!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>&copy; 2023 CBADOS Rap. Todos los derechos reservados.</p>
         </div>
-        <div class="footer-col-2">
+        <div class="footer-col-1">
             <ul class="color-orange">
                 <li><a class="footer-orange" href="./batallas.html">Batallas</a></li>
                 <li><a class="footer-orange" href="./musica.html">Musica</a></li>
+                <li><a class="footer-orange" href="./top-10.html">Top 10</a></li>
                 <li><a class="footer-orange" href="./sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li><a class="footer-orange" href="./trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
             </ul>
@@ -285,5 +286,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body> 
 </html>

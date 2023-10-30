@@ -1,0 +1,55 @@
+$color-primario:rgb(255,118,18);
+$color-secundario:rgb(36,47,65);
+$color-blanco: white;
+
+.secciones{
+    background-color: rgb(255,118,18);
+    color: white;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+
+
+.btn{
+    background-color: rgb(36,47,65);
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    margin: 0px 20px 10px 20px;
+    &:hover{
+        background-color: rgb(255,118,18);
+        border: 2px solid white;  
+        color: white;
+    }
+}
+
+.negrita{
+    font-weight: bold;
+    text-align: center;
+}
+
+.foto-sobre-nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding: 5px;
+    border-radius: 75px 75px 75px 75px;
+}
+
+   
+.margin-sobre-nos{
+    margin: 10px;
+    text-align: center;
+    grid-area: margin-sobre-nos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

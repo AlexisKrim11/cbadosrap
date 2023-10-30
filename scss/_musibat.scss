@@ -1,0 +1,62 @@
+@import "mixin";
+
+.musibat{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: 0px solid transparent;
+    margin: 10px;
+    border-radius: 0% 0% 0% 0%;
+
+    @include medias-querys ('tablet'){ 
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+    @include medias-querys ('mobile'){
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    .img-musibat{
+        width: 500px; 
+        height: 250px;
+        margin-right: 5px;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+        padding: 5px;
+
+        @include medias-querys ('tablet'){ 
+            width: 90%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        @include medias-querys ('mobile'){
+            width: 90%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    .grid-musibat{
+        grid-area: grid-musibat;
+    }
+    
+}
+
+
+

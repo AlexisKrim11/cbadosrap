@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--description-->
+    <meta name="description" content="Noticias sobre musica de Rap">
+    <!--keywords-->
+    <meta name="keywords" content="Freestyle, Rap, Batallas, MC, Hip-hop, Eventos, Competencias, Noticias, Letras, Rimas, Escena musical, Versos, Campeonatos, Artistas, Cultura urbana, Cyphers, Improvisacion, Liricas, Freestylers, Entrevistas">   
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css"> 
-    <title>CBADOS RAP</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <title>CBADOS RAP - Musica</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,900&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <!--Redes-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Animacion-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="grid-container-musibat">
@@ -22,7 +28,9 @@
     <header class="header"> 
       <div class="encabezado">
           <a href="../index.html">
-            <img src="../assets/cbados.png" alt="logoCbadoos" class="logo">
+            <img data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" src="../assets/cbados.png" alt="logoCbadoos" class="logo">
           </a>
           <div class="centrar-titulo">
               <h1 class="cbados">CBADOS RAP</h1>
@@ -40,7 +48,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="menu-hamburguesa">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu navegable">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -56,10 +64,13 @@
               <a  href="#" class="nav-link">Música</a>
             </li>
             <li class="nav-item">
+              <a href="./top-10.html" class="nav-link">Top 10</a>
+            </li>
+            <li class="nav-item">
               <a  href="./sobre-nosotros.html"class="nav-link">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="trabaja-con-nosotros.html" class="nav-link">Trabaja con nosotros</a>
+              <a  href="./trabaja-con-nosotros.html"class="nav-link">Trabaja con nosotros</a>
             </li>
           </ul>
         </div>
@@ -76,8 +87,8 @@
         <article class="musibat">
             <img class="img-musibat" src="../assets/mecha.jpg" alt="nota-mecha">
             <div class="text-musibat">
-                <h4>La importancia de Mecha para la Red Bull en Córdoba</h4>
-                <p>El joven cordobés, Mecha, está revolucionando el mundo del freestyle en Córdoba y trae por primera vez la competencia más grande del mundo a nuestra provincia.</p>
+                <h4> Mecha y la Red Bull en Córdoba</h4>
+                <p>Mecha, está revolucionando el mundo del freestyle en Córdoba y trae la competencia más grande del mundo a nuestra provincia.</p>
             </div>
         </article>
         <article class="musibat">
@@ -98,21 +109,21 @@
             <img class="img-musibat" src="../assets/trueno.jpg" alt="trueno">
             <div class="text-musibat">
                 <h4>La música de septiembre en Argentina</h4>
-                <p>Tenemos un listado de las nuevas canciones del mes de septiembre, donde se destaca el nuevo disco de Acru llamado "El Don" y la canción de Trueno dedicada a su padre.</p>  
+                <p>Tenemos un listado de las nuevas canciones del mes de septiembre, donde se destaca la canción de Trueno dedicada a su padre.</p>  
             </div>
         </article>
         <article class="musibat">
             <img class="img-musibat" src="../assets/graffitii.jpg" alt="grafitti">
             <div class="text-musibat">
                 <h4>El arte no entendida por la ley</h4>
-                <p>El grafitti es una de las ramas principales del Hip Hop. Klan es un exponente de la materia que nos cuenta cómo se aprende y lo díficil que es llevarla a la práctica.</p>
+                <p>El grafitti es una de las ramas principales del Hip Hop. Klan es un exponente de la materia que nos cuenta cómo se aprende a hacerlo.</p>
             </div>   
         </article>
         <article class="musibat">
             <img class="img-musibat" src="../assets/naista.jpg" alt="naista">
             <div class="text-musibat">
-                <h4>Naista fue el campeón de la última fecha de la CBADOS Rap.</h4>
-                <p>En nuestra competencia que se celebra el último viernes de cada mes, se presentaron más de 100 raperos, donde Naista resulto el justo ganador.</p>
+                <h4>Naista fue el campeón de la CBADOS Rap.</h4>
+                <p>En nuestra compe que se celebra en plaza Velez, se presentaron más de 100 raperos, donde Naista resulto el justo ganador.</p>
             </div>
         </article>
     </section>
@@ -164,7 +175,7 @@
                 Otro
               </label>
             </div>
-            <input type="submit" value="Enviar opinión" class="botones">
+            <input type="submit" value="Enviar opinión" class="btn">
           </form>
       </div>
       <aside id="fn-main-sidebar" class="fn-main-sidebar fn-sidebar fn-sticky-col">
@@ -248,10 +259,11 @@
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1431.51688287207!2d-64.18939266816722!3d-31.421285354985482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28428fd485d%3A0x4f89f1c2159ad96d!2sPlaza%20Dr.%20Dalmacio%20V%C3%A9lez%20Sarsfield!5e0!3m2!1ses-419!2sar!4v1694315375589!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>&copy; 2023 CBADOS Rap. Todos los derechos reservados.</p>
         </div>
-        <div class="footer-col-2">
+        <div class="footer-col-1">
             <ul class="color-orange">
                 <li><a class="footer-orange" href="./batallas.html">Batallas</a></li>
                 <li><a class="footer-orange" href="./musica.html">Musica</a></li>
+                <li><a class="footer-orange" href="./top-10.html">Top 10</a></li>
                 <li><a class="footer-orange" href="./sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li><a class="footer-orange" href="./trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
             </ul>
@@ -268,5 +280,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body> 
 </html>

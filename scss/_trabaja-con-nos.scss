@@ -1,0 +1,49 @@
+
+.grid-trabaja-con-nos{
+    grid-area: grid-trabaja-con-nos;
+
+    form input{
+        width: 275px;
+        height: auto;
+    }
+
+    .conteiner-trabaja-con-nos{
+        padding: 15px;
+        margin: 10px;
+        background-image: url(../assets/E_PzOa3XIAEZQH_.jpg_large);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    input{
+        margin: 10px;
+    }
+    
+    .form-label{
+        color: white;
+        font-weight: 700;
+        font-style: italic;
+        
+    }
+    .col-md-6{
+        width: 40%;
+        margin: 15px;
+    }
+
+    .foto-sobre-nos{
+
+        @include medias-querys ('tablet'){ 
+            width: 90%;
+            height: auto;
+        }
+        @include medias-querys ('mobile'){
+           width: 90%;
+            height: auto;
+        }
+    }
+    
+    
+}
+
+
